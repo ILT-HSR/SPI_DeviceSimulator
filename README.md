@@ -9,11 +9,14 @@ how proper they work with the diffrent data-types.
 * It also gives an idea how SPICE can be used.
 
 ## Provided Functionality
-* A series of commands with parameter in diffrent data-types. The commands always return the parameter-value in their response-data.
+* A series of commands with parameters using the diffrent data-types. The commands always return the parameter-value in their response-data.
 * Two commands which are possible to run parallel to themself and each other.
 * Two commands which aren't able to run parallel.
 * A command which throws an error. The error-type can be set over the parameter (as example: recoverable / not recoverable)
 * WSDiscovery (Type: "SiLADevice", no Scope)
+
+## Binaries
+* Binaries are available with the releases: https://github.com/LukasMuellerILT/SPI_DeviceSimulator/releases
 
 ## SiLAVersion
 SPI_DeviceSimulator v1.0: based on SPICE 1.0.x, implements SiLA DCIS 1.3.08 specification
