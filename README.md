@@ -1,4 +1,4 @@
-# ![SPICE Logo](https://github.com/LukasMuellerILT/SPICE/tree/master/SPICE_Logos/SPICE_064.png) SPI_DeviceSimulator
+# ![SPICE Logo](raw.github.com/LukasMuellerILT/SPICE/tree/master/SPICE_Logos/SPICE_064.png) SPI_DeviceSimulator
 
 SPI_DeviceSimulator is an implemented SiLA ServiceProvider based on [SPICE](https://github.com/LukasMuellerILT/SPICE).
 
