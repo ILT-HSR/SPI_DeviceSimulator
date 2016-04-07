@@ -16,14 +16,19 @@
 #include "DataEntryBool.h"
 
 #include "CommandThrowingError.h"
-#include "CommandWithFloatingParameters.h"
-#include "CommandWithOtherParameters.h"
-#include "CommandWithSignedParameters.h"
+#include "CommandWithFloatParameter.h"
+#include "CommandWithDoubleParameter.h"
+#include "CommandWithBoolParameter.h"
+#include "CommandWithStringParameter.h"
+#include "CommandWithDurationParameter.h"
 #include "CommandWithInt8Parameter.h"
 #include "CommandWithInt16Parameter.h"
 #include "CommandWithInt32Parameter.h"
 #include "CommandWithInt64Parameter.h"
-#include "CommandWithUnsignedParameters.h"
+#include "CommandWithUInt8Parameter.h"
+#include "CommandWithUInt16Parameter.h"
+#include "CommandWithUInt32Parameter.h"
+#include "CommandWithUInt64Parameter.h"
 #include "NonParallelCommandExecution1.h"
 #include "NonParallelCommandExecution2.h"
 #include "ParallelCommandExecution1.h"
@@ -80,14 +85,19 @@ namespace SPI
 			std::vector<std::shared_ptr<SPICE::BIG::CommandBase>> returnVector;
 
 			returnVector.push_back(createCommand("CommandThrowingError"));
-			returnVector.push_back(createCommand("CommandWithFloatingParameters"));
-			returnVector.push_back(createCommand("CommandWithOtherParameters"));
-			returnVector.push_back(createCommand("CommandWithSignedParameters"));
+			returnVector.push_back(createCommand("CommandWithFloatParameter"));
+			returnVector.push_back(createCommand("CommandWithDoubleParameter"));
+			returnVector.push_back(createCommand("CommandWithBoolParameter"));
+			returnVector.push_back(createCommand("CommandWithStringParameter"));
+			returnVector.push_back(createCommand("CommandWithDurationParameter"));
 			returnVector.push_back(createCommand("CommandWithInt8Parameter"));
 			returnVector.push_back(createCommand("CommandWithInt16Parameter"));
 			returnVector.push_back(createCommand("CommandWithInt32Parameter"));
 			returnVector.push_back(createCommand("CommandWithInt64Parameter"));
-			returnVector.push_back(createCommand("CommandWithUnsignedParameters"));
+			returnVector.push_back(createCommand("CommandWithUInt8Parameter"));
+			returnVector.push_back(createCommand("CommandWithUInt16Parameter"));
+			returnVector.push_back(createCommand("CommandWithUInt32Parameter"));
+			returnVector.push_back(createCommand("CommandWithUInt64Parameter"));
 			returnVector.push_back(createCommand("NonParallelCommandExecution1"));
 			returnVector.push_back(createCommand("NonParallelCommandExecution2"));
 			returnVector.push_back(createCommand("ParallelCommandExecution1"));
@@ -101,17 +111,25 @@ namespace SPI
 			{
 				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandThrowingError(_specificCoreContainer->getSpecificCore()));
 			}
-			else if(commandName == "CommandWithFloatingParameters")
+			else if(commandName == "CommandWithFloatParameter")
 			{
-				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithFloatingParameters(_specificCoreContainer->getSpecificCore()));
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithFloatParameter(_specificCoreContainer->getSpecificCore()));
 			}
-			else if(commandName == "CommandWithOtherParameters")
+			else if(commandName == "CommandWithDoubleParameter")
 			{
-				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithOtherParameters(_specificCoreContainer->getSpecificCore()));
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithDoubleParameter(_specificCoreContainer->getSpecificCore()));
 			}
-			else if(commandName == "CommandWithSignedParameters")
+			else if(commandName == "CommandWithBoolParameter")
 			{
-				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithSignedParameters(_specificCoreContainer->getSpecificCore()));
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithBoolParameter(_specificCoreContainer->getSpecificCore()));
+			}
+			else if(commandName == "CommandWithStringParameter")
+			{
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithStringParameter(_specificCoreContainer->getSpecificCore()));
+			}
+			else if(commandName == "CommandWithDurationParameter")
+			{
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithDurationParameter(_specificCoreContainer->getSpecificCore()));
 			}
 			else if(commandName == "CommandWithInt8Parameter")
 			{
@@ -129,9 +147,21 @@ namespace SPI
 			{
 				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithInt64Parameter(_specificCoreContainer->getSpecificCore()));
 			}
-			else if(commandName == "CommandWithUnsignedParameters")
+			else if(commandName == "CommandWithUInt8Parameter")
 			{
-				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithUnsignedParameters(_specificCoreContainer->getSpecificCore()));
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithUInt8Parameter(_specificCoreContainer->getSpecificCore()));
+			}
+			else if(commandName == "CommandWithUInt16Parameter")
+			{
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithUInt16Parameter(_specificCoreContainer->getSpecificCore()));
+			}
+			else if(commandName == "CommandWithUInt32Parameter")
+			{
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithUInt32Parameter(_specificCoreContainer->getSpecificCore()));
+			}
+			else if(commandName == "CommandWithUInt64Parameter")
+			{
+				command = std::shared_ptr<SPICE::BIG::CommandBase>(new CommandWithUInt64Parameter(_specificCoreContainer->getSpecificCore()));
 			}
 			else if(commandName == "NonParallelCommandExecution1")
 			{
@@ -198,7 +228,7 @@ namespace SPI
 			deviceManufacturer = "ilt.hsr.ch";
 			deviceName = "DeviceSimulator";
 			deviceSerialNumber = "-";
-			deviceFirmwareVersion = "v1.0 - 20160331";
+			deviceFirmwareVersion = "v1.0 - 20160407";
 			includeConverterIdentification = true; // true -> includes the identification of SPICE
 		}
 		int ResourceProvider::getDeviceClass()

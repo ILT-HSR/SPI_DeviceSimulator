@@ -87,14 +87,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CommandThrowingError.h" />
-    <ClInclude Include="CommandWithFloatingParameters.h" />
+    <ClInclude Include="CommandWithBoolParameter.h" />
+    <ClInclude Include="CommandWithDoubleParameter.h" />
+    <ClInclude Include="CommandWithDurationParameter.h" />
+    <ClInclude Include="CommandWithFloatParameter.h" />
     <ClInclude Include="CommandWithInt16Parameter.h" />
     <ClInclude Include="CommandWithInt32Parameter.h" />
     <ClInclude Include="CommandWithInt64Parameter.h" />
     <ClInclude Include="CommandWithInt8Parameter.h" />
-    <ClInclude Include="CommandWithOtherParameters.h" />
-    <ClInclude Include="CommandWithSignedParameters.h" />
-    <ClInclude Include="CommandWithUnsignedParameters.h" />
+    <ClInclude Include="CommandWithStringParameter.h" />
+    <ClInclude Include="CommandWithUInt16Parameter.h" />
+    <ClInclude Include="CommandWithUInt32Parameter.h" />
+    <ClInclude Include="CommandWithUInt64Parameter.h" />
+    <ClInclude Include="CommandWithUInt8Parameter.h" />
     <ClInclude Include="NonParallelCommandExecution1.h" />
     <ClInclude Include="NonParallelCommandExecution2.h" />
     <ClInclude Include="ParallelCommandExecution1.h" />
@@ -111,14 +116,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandThrowingError.cpp" />
-    <ClCompile Include="CommandWithFloatingParameters.cpp" />
+    <ClCompile Include="CommandWithBoolParameter.cpp" />
+    <ClCompile Include="CommandWithDoubleParameter.cpp" />
+    <ClCompile Include="CommandWithDurationParameter.cpp" />
+    <ClCompile Include="CommandWithFloatParameter.cpp" />
     <ClCompile Include="CommandWithInt16Parameter.cpp" />
     <ClCompile Include="CommandWithInt32Parameter.cpp" />
     <ClCompile Include="CommandWithInt64Parameter.cpp" />
     <ClCompile Include="CommandWithInt8Parameter.cpp" />
-    <ClCompile Include="CommandWithOtherParameters.cpp" />
-    <ClCompile Include="CommandWithSignedParameters.cpp" />
-    <ClCompile Include="CommandWithUnsignedParameters.cpp" />
+    <ClCompile Include="CommandWithStringParameter.cpp" />
+    <ClCompile Include="CommandWithUInt16Parameter.cpp" />
+    <ClCompile Include="CommandWithUInt32Parameter.cpp" />
+    <ClCompile Include="CommandWithUInt64Parameter.cpp" />
+    <ClCompile Include="CommandWithUInt8Parameter.cpp" />
     <ClCompile Include="NonParallelCommandExecution1.cpp" />
     <ClCompile Include="NonParallelCommandExecution2.cpp" />
     <ClCompile Include="ParallelCommandExecution1.cpp" />

@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="SPI_Template" />
+		<Option title="SPI_DeviceSimulator" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/SPI_Templated" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/SPI_DeviceSimulatord" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -33,7 +33,7 @@
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/SPI_Template" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/SPI_DeviceSimulator" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -64,19 +64,45 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="CommandMinimum.cpp" />
-		<Unit filename="CommandMinimum.h" />
-		<Unit filename="CommandWithParallelExecution.cpp" />
-		<Unit filename="CommandWithParallelExecution.h" />
-		<Unit filename="CommandWithParameter.cpp" />
-		<Unit filename="CommandWithParameter.h" />
-		<Unit filename="CommandWithResponseData.cpp" />
-		<Unit filename="CommandWithResponseData.h" />
-		<Unit filename="CommandWithSpecificSimulation.cpp" />
-		<Unit filename="CommandWithSpecificSimulation.h" />
+		<Unit filename="CommandThrowingError.cpp" />
+		<Unit filename="CommandThrowingError.h" />
+		<Unit filename="CommandWithBoolParameter.cpp" />
+		<Unit filename="CommandWithBoolParameter.h" />
+		<Unit filename="CommandWithDoubleParameter.cpp" />
+		<Unit filename="CommandWithDoubleParameter.h" />
+		<Unit filename="CommandWithDurationParameter.cpp" />
+		<Unit filename="CommandWithDurationParameter.h" />
+		<Unit filename="CommandWithFloatParameter.cpp" />
+		<Unit filename="CommandWithFloatParameter.h" />
+		<Unit filename="CommandWithInt16Parameter.cpp" />
+		<Unit filename="CommandWithInt16Parameter.h" />
+		<Unit filename="CommandWithInt32Parameter.cpp" />
+		<Unit filename="CommandWithInt32Parameter.h" />
+		<Unit filename="CommandWithInt64Parameter.cpp" />
+		<Unit filename="CommandWithInt64Parameter.h" />
+		<Unit filename="CommandWithInt8Parameter.cpp" />
+		<Unit filename="CommandWithInt8Parameter.h" />
+		<Unit filename="CommandWithStringParameter.cpp" />
+		<Unit filename="CommandWithStringParameter.h" />
+		<Unit filename="CommandWithUInt16Parameter.cpp" />
+		<Unit filename="CommandWithUInt16Parameter.h" />
+		<Unit filename="CommandWithUInt32Parameter.cpp" />
+		<Unit filename="CommandWithUInt32Parameter.h" />
+		<Unit filename="CommandWithUInt64Parameter.cpp" />
+		<Unit filename="CommandWithUInt64Parameter.h" />
+		<Unit filename="CommandWithUInt8Parameter.cpp" />
+		<Unit filename="CommandWithUInt8Parameter.h" />
+		<Unit filename="NonParallelCommandExecution1.cpp" />
+		<Unit filename="NonParallelCommandExecution1.h" />
+		<Unit filename="NonParallelCommandExecution2.cpp" />
+		<Unit filename="NonParallelCommandExecution2.h" />
+		<Unit filename="ParallelCommandExecution1.cpp" />
+		<Unit filename="ParallelCommandExecution1.h" />
+		<Unit filename="ParallelCommandExecution2.cpp" />
+		<Unit filename="ParallelCommandExecution2.h" />
 		<Unit filename="ResourceProvider.cpp" />
 		<Unit filename="ResourceProvider.h" />
-		<Unit filename="SPITemplate.cpp" />
+		<Unit filename="SPIDeviceSimulator.cpp" />
 		<Unit filename="SpecificCommandBase.cpp" />
 		<Unit filename="SpecificCommandBase.h" />
 		<Unit filename="SpecificCore.cpp" />

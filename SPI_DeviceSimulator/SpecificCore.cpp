@@ -66,19 +66,19 @@ namespace SPI
 			responseDataSet->getFirstDataEntryByName("longResponse")->setValueString(std::to_string(longParameter));
 			return returnValue;
 		}
-		bool SpecificCore::commandWithInt8Parameter(char byteParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		bool SpecificCore::commandWithInt8Parameter(int8_t byteParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
 		{
 			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("byteResponse")->setValueString(std::to_string(byteParameter));
 			return returnValue;
 		}
-		bool SpecificCore::commandWithInt16Parameter(short shortParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		bool SpecificCore::commandWithInt16Parameter(int16_t shortParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
 		{
 			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("shortResponse")->setValueString(std::to_string(shortParameter));
 			return returnValue;
 		}
-		bool SpecificCore::commandWithInt32Parameter(int intParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		bool SpecificCore::commandWithInt32Parameter(int32_t intParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
 		{
 			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("intResponse")->setValueString(std::to_string(intParameter));
@@ -90,27 +90,57 @@ namespace SPI
 			responseDataSet->getFirstDataEntryByName("longResponse")->setValueString(std::to_string(longParameter));
 			return returnValue;
 		}
-		bool SpecificCore::commandWithUnsignedParameters(unsigned char uByteParameter, unsigned short uShortParameter, unsigned int uIntParameter, uint64_t uLongParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		bool SpecificCore::commandWithUInt8Parameter(uint8_t uByteParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
 		{
 			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("uByteResponse")->setValueString(std::to_string(uByteParameter));
+			return returnValue;
+		}
+		bool SpecificCore::commandWithUInt16Parameter(uint16_t uShortParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		{
+			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("uShortResponse")->setValueString(std::to_string(uShortParameter));
+			return returnValue;
+		}
+		bool SpecificCore::commandWithUInt32Parameter(uint32_t uIntParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		{
+			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("uIntResponse")->setValueString(std::to_string(uIntParameter));
+			return returnValue;
+		}
+		bool SpecificCore::commandWithUInt64Parameter(uint64_t uLongParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		{
+			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("uLongResponse")->setValueString(std::to_string(uLongParameter));
 			return returnValue;
 		}
-		bool SpecificCore::commandWithFloatingParameters(float floatParameter, double doubleParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		bool SpecificCore::commandWithFloatParameter(float floatParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
 		{
 			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("floatResponse")->setValueString(std::to_string(floatParameter));
+			return returnValue;
+		}
+		bool SpecificCore::commandWithDoubleParameter(double doubleParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		{
+			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("doubleResponse")->setValueString(std::to_string(doubleParameter));
 			return returnValue;
 		}
-		bool SpecificCore::commandWithOtherParameters(bool boolParameter, std::string stringParameter, double durationParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		bool SpecificCore::commandWithBoolParameter(bool boolParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
 		{
 			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("boolResponse")->setValueString(std::to_string(boolParameter));
+			return returnValue;
+		}
+		bool SpecificCore::commandWithStringParameter(std::string stringParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		{
+			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("stringResponse")->setValueString(stringParameter);
+			return returnValue;
+		}
+		bool SpecificCore::commandWithDurationParameter(double durationParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
+		{
+			bool returnValue = executeDuration(5, commandCallback);
 			responseDataSet->getFirstDataEntryByName("durationResponse")->setValueString(std::to_string(durationParameter));
 			return returnValue;
 		}
@@ -179,7 +209,6 @@ namespace SPI
 
 		bool SpecificCore::executeDuration(double duration, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback)
 		{
-			bool active = true;
 			double durationCounter = 0;
 			while(durationCounter < duration)
 			{

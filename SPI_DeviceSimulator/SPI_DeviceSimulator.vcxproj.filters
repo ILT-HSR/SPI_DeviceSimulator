@@ -28,18 +28,6 @@
     <ClCompile Include="SPIDeviceSimulator.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="CommandWithSignedParameters.cpp">
-      <Filter>Quelldateien\Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandWithUnsignedParameters.cpp">
-      <Filter>Quelldateien\Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandWithFloatingParameters.cpp">
-      <Filter>Quelldateien\Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandWithOtherParameters.cpp">
-      <Filter>Quelldateien\Commands</Filter>
-    </ClCompile>
     <ClCompile Include="NonParallelCommandExecution1.cpp">
       <Filter>Quelldateien\Commands</Filter>
     </ClCompile>
@@ -65,6 +53,33 @@
       <Filter>Quelldateien\Commands</Filter>
     </ClCompile>
     <ClCompile Include="CommandWithInt64Parameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithUInt8Parameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithUInt16Parameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithUInt32Parameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithUInt64Parameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithBoolParameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithDurationParameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithStringParameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithDoubleParameter.cpp">
+      <Filter>Quelldateien\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWithFloatParameter.cpp">
       <Filter>Quelldateien\Commands</Filter>
     </ClCompile>
   </ItemGroup>
@@ -96,18 +111,6 @@
     <ClInclude Include="SpecificSetParameters.h">
       <Filter>Headerdateien\Commands</Filter>
     </ClInclude>
-    <ClInclude Include="CommandWithSignedParameters.h">
-      <Filter>Headerdateien\Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandWithUnsignedParameters.h">
-      <Filter>Headerdateien\Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandWithFloatingParameters.h">
-      <Filter>Headerdateien\Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandWithOtherParameters.h">
-      <Filter>Headerdateien\Commands</Filter>
-    </ClInclude>
     <ClInclude Include="ParallelCommandExecution1.h">
       <Filter>Headerdateien\Commands</Filter>
     </ClInclude>
@@ -133,6 +136,33 @@
       <Filter>Headerdateien\Commands</Filter>
     </ClInclude>
     <ClInclude Include="CommandWithInt8Parameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithUInt8Parameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithUInt16Parameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithUInt32Parameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithUInt64Parameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithBoolParameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithStringParameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithDurationParameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithFloatParameter.h">
+      <Filter>Headerdateien\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWithDoubleParameter.h">
       <Filter>Headerdateien\Commands</Filter>
     </ClInclude>
   </ItemGroup>

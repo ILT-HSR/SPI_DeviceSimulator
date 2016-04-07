@@ -38,13 +38,20 @@ namespace SPI
 				bool setParameters(std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
 
 				bool commandWithSignedParameters(char byteParameter, short shortParameter, int intParameter, int64_t longParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
-				bool commandWithInt8Parameter(char byteParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
-				bool commandWithInt16Parameter(short shortParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
-				bool commandWithInt32Parameter(int intParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithInt8Parameter(int8_t byteParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithInt16Parameter(int16_t shortParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithInt32Parameter(int32_t intParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
 				bool commandWithInt64Parameter(int64_t longParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
 				bool commandWithUnsignedParameters(unsigned char uByteParameter, unsigned short uShortParameter, unsigned int uIntParameter, uint64_t uLongParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
-				bool commandWithFloatingParameters(float floatParameter, double doubleParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
-				bool commandWithOtherParameters(bool boolParameter, std::string stringParameter, double durationParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithUInt8Parameter(uint8_t byteParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithUInt16Parameter(uint16_t shortParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithUInt32Parameter(uint32_t intParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithUInt64Parameter(uint64_t longParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithFloatParameter(float floatParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithDoubleParameter(double doubleParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithBoolParameter(bool boolParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithStringParameter(std::string stringParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
+				bool commandWithDurationParameter(double durationParameter, std::shared_ptr<SPICE::BIG::DataSet> responseDataSet, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
 
 				bool commandForNonParallelExecution(double executionDuration, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);
 				bool commandForParallelExecution(double executionDuration, std::shared_ptr<SPICE::BIG::ICommandCallback> commandCallback);

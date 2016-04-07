@@ -1,29 +1,28 @@
 /**
 	SPI DeviceSimulator
-	CommandWithFloatingParameters.h
-	Purpose: This command provides parameters with floating data types and return the values in the response data set.
+	CommandWithDoubleParameter.h
+	Purpose: This command provides a parameter with double data type and return the value in the response data set.
 
 	@author Lukas Mueller (ilt.hsr.ch)
-	@version 1.0 2016_03_31
+	@version 1.0 2016_04_06
 */
 
-#ifndef COMMANDWITHFLOATINGPARAMETERS_H
-#define COMMANDWITHFLOATINGPARAMETERS_H
+#ifndef COMMANDWITHDOUBLEPARAMETERS_H
+#define COMMANDWITHDOUBLEPARAMETERS_H
 
 #include "SpecificCommandBase.h"
 
-#include "DataEntryFloat.h"
 #include "DataEntryDouble.h"
 
 namespace SPI
 {
 	namespace DeviceSimulator
 	{
-		class CommandWithFloatingParameters : public SpecificCommandBase
+		class CommandWithDoubleParameter : public SpecificCommandBase
 		{
 			public:
-				CommandWithFloatingParameters(std::shared_ptr<SpecificCore> specificCore);
-				virtual ~CommandWithFloatingParameters();
+				CommandWithDoubleParameter(std::shared_ptr<SpecificCore> specificCore);
+				virtual ~CommandWithDoubleParameter();
 
 				virtual std::string getCommandName();
 				virtual std::string getCommandDescription();
@@ -36,10 +35,9 @@ namespace SPI
 
 			protected:
 			private:
-				std::shared_ptr<SPICE::BIG::DataEntryTypes::DataEntryFloat> _floatParameter;
 				std::shared_ptr<SPICE::BIG::DataEntryTypes::DataEntryDouble> _doubleParameter;
 				std::shared_ptr<SPICE::BIG::DataSet> _responseDataSet;
 		};
 	}
 }
-#endif // COMMANDWITHFLOATINGPARAMETERS_H
+#endif // COMMANDWITHDOUBLEPARAMETERS_H
