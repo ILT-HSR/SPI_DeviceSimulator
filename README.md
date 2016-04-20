@@ -51,3 +51,6 @@ libraries. It just uses this very open license that encourages both commercial a
 
 Source: http://www.boost.org/users/license.html
 
+## Developer
+* Developed by *ILT - Institute for Lab Automation and Mechatronics* in Rapperswil (Switzerland). [ilt.hsr.ch](ilt.hsr.ch)
+* Commissioned by *Actelion Pharmaceuticals Ltd.* in Allschwil (Switzerland).
