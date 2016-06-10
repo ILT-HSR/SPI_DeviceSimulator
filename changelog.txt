@@ -1,0 +1,7 @@
+SPI_DeviceSimulator Changelog
+
+--- 1.0.1 --- 2016_06_10
+- Update SPICE to 1.0.5 and POCO to 1.7.3
+
+--- 1.0.0 ---
+- OpenSource-release
