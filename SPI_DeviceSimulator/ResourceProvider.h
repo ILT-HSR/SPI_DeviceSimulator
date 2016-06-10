@@ -4,7 +4,7 @@
 	Purpose: Implementation of the specific resource provider
 
 	@author Lukas Mueller (ilt.hsr.ch)
-	@version 1.0 2016_01_22
+	@version 1.1 2016_06_10
 */
 
 #ifndef RESOURCEPROVIDER_H

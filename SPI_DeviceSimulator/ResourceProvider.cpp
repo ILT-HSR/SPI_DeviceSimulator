@@ -4,7 +4,7 @@
 	Purpose: Implementation of the specific resource provider
 
 	@author Lukas Mueller (ilt.hsr.ch)
-	@version 1.0 2016_03_31
+	@version 1.1 2016_06_10
 */
 
 #include "ResourceProvider.h"
@@ -228,7 +228,7 @@ namespace SPI
 			deviceManufacturer = "ilt.hsr.ch";
 			deviceName = "DeviceSimulator";
 			deviceSerialNumber = "-";
-			deviceFirmwareVersion = "v1.0 - 20160407";
+			deviceFirmwareVersion = "v1.0.1 - 20160610";
 			includeConverterIdentification = true; // true -> includes the identification of SPICE
 		}
 		int ResourceProvider::getDeviceClass()
