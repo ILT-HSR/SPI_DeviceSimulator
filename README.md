@@ -1,6 +1,6 @@
 # ![SPICE Logo](/SPICE_064.png) SPI_DeviceSimulator
 
-SPI_DeviceSimulator is an implemented SiLA ServiceProvider based on [SPICE](https://github.com/LukasMuellerILT/SPICE).
+SPI_DeviceSimulator is an implemented SiLA ServiceProvider based on [SPICE](https://github.com/ILT-HSR/SPICE).
 
 ## Idea
 * Idea is to have a SiLA ServiceProvider available which implements as much as possible of the existing standard.
@@ -16,7 +16,7 @@ how proper they work with the diffrent data-types.
 * WSDiscovery (Type: "SiLADevice", no Scope)
 
 ## Binaries
-* Binaries are available with the releases: https://github.com/LukasMuellerILT/SPI_DeviceSimulator/releases
+* Binaries are available with the releases: https://github.com/ILT-HSR/SPI_DeviceSimulator/releases
 
 ## SiLAVersion
 SPI_DeviceSimulator v1.0: based on SPICE 1.0.x, implements SiLA DCIS 1.3.08 specification
